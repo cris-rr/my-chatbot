@@ -14,7 +14,7 @@ const chatSchema = z.object({
 
 // Public interface
 export const chatController = {
-  async sendmessage(req: Request, res: Response) {
+  async sendMessage(req: Request, res: Response) {
     const parseResult = chatSchema.safeParse(req.body);
     if (!parseResult.success) {
       res.status(400).json(parseResult.error.format());
