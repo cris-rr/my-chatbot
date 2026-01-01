@@ -4,8 +4,8 @@ import TypingIndicator from './TypingIndicator';
 import type { Message } from './ChatMessages';
 import ChatMessages from './ChatMessages';
 import ChatInput, { type ChatFormData } from './ChatInput';
-import popSound from '@assets/sounds/pop.mp3';
-import notificationSound from '@assets/sounds/notification.mp3';
+import popSound from '@/assets/sounds/pop.mp3';
+import notificationSound from '@/assets/sounds/notification.mp3';
 
 const popAudio = new Audio(popSound);
 popAudio.volume = 0.2;
